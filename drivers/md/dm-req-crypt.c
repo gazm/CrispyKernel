@@ -720,9 +720,8 @@ static int req_crypt_ctr(struct dm_target *ti, unsigned int argc, char **argv)
 	start_sector_orig = tmpll;
 
 	req_crypt_queue = alloc_workqueue("req_cryptd",
-					WQ_NON_REENTRANT |
-					WQ_HIGHPRI |
-					WQ_CPU_INTENSIVE|
+					WQ_UNBOUND |
+					WQ_CPU_INTENSIVE |
 					WQ_MEM_RECLAIM,
 					1);
 	if (!req_crypt_queue) {

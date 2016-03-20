@@ -20,7 +20,9 @@ TARGET=${1}
 ##SET VARIABLES
 export ARCH=arm;
 export SUB_ARCH=arm;
-export CROSS_COMPILE=/home/gazm/toolchains/gcc-linaro-4.9-arm-linux-gnueabi/bin/arm-linux-gnueabi-;
+#export CROSS_COMPILE=/home/gazm/toolchains/gcc-linaro-4.9-arm-linux-gnueabi/bin/arm-linux-gnueabi-;
+export CROSS_COMPLILE=/home/gazm/toolchains/UBERTC-arm-eabi/bin/arm-eabi-;
+#export CROSS_COMPLILE="/home/gazm/toolchains/UBERTC-arm-eabi-4.9/bin/arm-eabi-";
 export DEFCONFIG=crispy_defconfig;
 export EXTRA_CMDS='';
 export KERNEL_DIR=/home/gazm/CrispyKernel;
@@ -33,8 +35,8 @@ export EXP_CONFIG_DIR=/home/gazm/CrispyKernel/arch/arm/configs/ext_config/CRISPY
 
 #TEST
 #########################
-if [ ! -f ${CROSS_COMPILE}gcc ]; then
-	echo "${bldred}Cannot find GCC compiler ${CROSS_COMPILE}gcc${txtrst}";
-	echo "${bldcya}Please ensure you have GCC Compiler at path mentioned.${txtrst}";
-	exit 1;
-fi;
+# if [ ! -f ${CROSS_COMPILE}gcc ]; then
+# 	echo "${bldred}Cannot find GCC compiler ${CROSS_COMPILE}gcc${txtrst}";
+# 	echo "${bldcya}Please ensure you have GCC Compiler at path mentioned.${txtrst}";
+# 	exit 1;
+# fi;

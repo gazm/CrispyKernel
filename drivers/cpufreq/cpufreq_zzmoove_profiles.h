@@ -2155,7 +2155,6 @@ struct zzmoove_profile zzmoove_profiles[] = {
 #endif /* defined(CONFIG_HAS_EARLYSUSPEND)... */
 	},
 	{
-		PROFILE_TABLE_END,
 
 		12,
 		"gazm",	// ZaneZam Relax Profile (please don't remove this profile)

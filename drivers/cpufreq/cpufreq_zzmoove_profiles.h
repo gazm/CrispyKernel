@@ -2172,7 +2172,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		30,		// down_threshold_hotplug1
 #if (MAX_CORES == 4 || MAX_CORES == 6 || MAX_CORES == 8)
 		60,		// down_threshold_hotplug2
-		70,		// down_threshold_hotplug3
+		85,		// down_threshold_hotplug3
 #endif /* (MAX_CORES == 4 || MAX_CORES == 6 || MAX_CORES == 8) */
 #if (MAX_CORES == 6 || MAX_CORES == 8)
 		55,		// down_threshold_hotplug4
@@ -2246,7 +2246,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		0,		// hotplug_sleep
 #endif /* defined(CONFIG_HAS_EARLYSUSPEND)... */
 		0,		// hotplug_engage_freq
-		0,		// hotplug_max_limit
+		3,		// hotplug_max_limit
 		2,		// hotplug_min_limit
 		0,		// hotplug_lock
 #endif /* ENABLE_HOTPLUGGING */
@@ -2254,7 +2254,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		4,		// sampling_down_factor
 		20,		// sampling_down_max_momentum
 		50,		// sampling_down_momentum_sensitivity
-		70000,		// sampling_rate
+		60000,		// sampling_rate
 		100000,		// sampling_rate_idle
 		0,		// sampling_rate_idle_delay
 		40,		// sampling_rate_idle_threshold
@@ -2302,7 +2302,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		68,		// up_threshold_hotplug1
 #if (MAX_CORES == 4 || MAX_CORES == 6 || MAX_CORES == 8)
 		78,		// up_threshold_hotplug2
-		88,		// up_threshold_hotplug3
+		90,		// up_threshold_hotplug3
 #endif /* (MAX_CORES == 4 || MAX_CORES == 6 || MAX_CORES == 8) */
 #if (MAX_CORES == 6 || MAX_CORES == 8)
 		68,		// up_threshold_hotplug4
@@ -2315,7 +2315,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		422400,		// up_threshold_hotplug_freq1
 #if (MAX_CORES == 4 || MAX_CORES == 6 || MAX_CORES == 8)
 		1036800,	// up_threshold_hotplug_freq2
-		1574400,	// up_threshold_hotplug_freq3
+		1958400,	// up_threshold_hotplug_freq3
 #endif /* (MAX_CORES == 4 || MAX_CORES == 6 || MAX_CORES == 8) */
 #if (MAX_CORES == 6 || MAX_CORES == 8)
 		0,		// up_threshold_hotplug_freq4
